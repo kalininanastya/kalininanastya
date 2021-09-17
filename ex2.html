@@ -7,75 +7,157 @@
 
 <html lang="ru">
 
+
   <head>
-    <title>Название страницы</title>
+    <title>Ширина, выравнивание, float</title>
+  </head>
+
+  <!-- по умолчанию body блочный элемент, занимает 100% ширины родительского элемента html и имеет небольшой отступ margin по краям -->
+  <body style="margin:0;">
+
+    <!-- этот блок будет тянуться по ширине окна -->
+    <div style="width:100%; background-color:#ccc; padding: 10px; height:120px;">
+      <!-- картинка обтекает текст слева -->
+      <img style="float:left; margin:10px; width:100px; height:100px;" src="image.png" alt="Описание картинки для скрин-ридеров и поисковиков" />
+      <!-- этот блок, как положено блочному элементу по умолчанию, займет всю оставшуюся ширину родительского элемента -->
+      <div style="background-color:#ddd; padding:10px;">Текст</div>
+    </div>
+
+    <!-- этот блок будет ограничен по ширине и горизонтально выровнен по центру родительского элемента -->
+    <div style="max-width:800px; background-color:#ccc; margin: 0 auto; margin-top:20px; padding:10px;">
+    Контент
+    </div>
+
+    <div style="width:100px; background-color:#ccc; margin:50px; padding:50px;">
+      <span style="background-color:red;">Контент</span>
+    </div>
+
+  </body>
+
+  <head>
+    <title>Задание 1</title>
   </head>
 
   <body>
 
-    <h1>Заголовок первого уровня, 
-      обычно один на странице, часто
-      совпадает с title и является
-      наиболее важным текстом на странице для пользователей и 
-      поисковых систем так как выводится крупно в начале страницы</h1>
+      <h2>Список ссылок</h2>
+      <ol>
+          <li><a href="http://example.com">Ссылка на главную страницу</a></li>
+          <li><a href="https://example.com">Ссылка на главную страницу в протоколе https</a></li>
+          <li><a href="ftp://example.com/f.txt">Ссылку на файл на сервере FTP без авторизации</a></li>
+          <li><a href="ftp://user:pass555@example.com/f.txt">Ссылку на файл на сервере FTP без авторизации</a></li>
+          <li><a href="http://necotoriysayt.com#anchor">Ссылка на некоторый фрагмент сайта </a></li>
+          <li><a href="http://example.com#top">Ссылка на фрагмент текущей страницы </a></li>
+          <li><a href="http://necotoriysayt.com/chto-to?page=3&dostavka=dilivery">Ссылка с двумя параметрами URL </a></li>
+          <li>
+              <ul>
+               
+                  <li><a href="./main.html" title="Главная страница">Основная страница</a></li>
+                  <li><a href="./information.html" title="Необходимая информация">Список покупок</a></li>
+                  <li><a href="./kittens.html" title="Расслабляющие картинки">Котята</a></li>
+              </ul>
+          </li>
+          <li><a ="http://example.com">Ссылка без href</a></li>
+          <li><a href=" ">Ссылка пустым href</a></li>
+          <li><a href="http://example.com" rel="nofollow">Сссылка по которой запрещен переход поисковикам</a></li>
+          <li><a href="http://example.com" rel="noindex">Ссылка по которой запрещена индексация поисковиками</a></li>
+          <li><p>Контекстная <a href="http://exmaple.com">ссылка</a></p></li>
+          <li><a href="http://example.com"><img src="image.jpg" alt="Цветок" style="width: 600px;" /></a></li>
+          <li><a href="">ссылки из прямоугольных и круглых областей картинки (HTML-тег map);</a></li>
+          <li><a href="primer">Относительная ссылка на страницу в каталоге</a></li>
+          <li><a href="about/12345.html">Относительная ссылка на страницу в каталоге</a></li>
+          <li><a href="about/12345.html">Относительная ссылка на страницу уровнем выше текущего</a></li>
+          <li><a href="../12345.html">Относительная ссылка на страницу двумя уровнями выше</a></li>
+          <li><a href="/mainpage">Сокращеная ссылка на главную страницу</a></li>
+          <li><a href="./"> Сокращенная ссылка на внутреннюю страницу </a></li>
+      </ol>
 
-    <p>Абзац текста. <em>Важный текст</em>.
-      <br /> Перенос строки.
-      <strong>Очень важный текст</strong>.</p>
+      <h2>Форма</h2>
 
-    <img src="image.jpg" alt="Цветок" style="width: 600px;" />
+      <form action="/"
+            method="POST">
 
-    <h2>Структура страницы</h2>
+          <label>
+              Введите имя:<br />
+              <input name="field-name-1"
+                     value="" />
+          </label><br />
 
-    <div>Блочный элемент</div>
+          <label>
+              Введите email:<br />
+              <input name="field-email"
+                     value=""
+                     type="email" />
+          </label><br />
 
-    <span>Строчный элемент</span>
+          <label>
+              Введите дату рождения:<br />
+              <input name="field-date"
+                     value=""
+                     type="date" />
+          </label><br />
 
-    <h2>Маркированный список</h2>
+          Выберите пол:<br />
+          <label>
+              <input type="radio" checked="checked"
+                     name="radio-group-1" value="Значение1" />
+              Женский
+          </label>
+          <label>
+              <input type="radio"
+                     name="radio-group-1" value="Значение2" />
+              Мужской
+          </label><br />
 
-    <ul>
-      <li>Элемент 1</li>
-      <li>Элемент 2</li>
-      <li>Элемент 3</li>
-    </ul>
+          Количество конечностей:<br />
+          <label>
+              <input type="radio" checked="checked"
+                     name="radio-group-2" value="Значение1" />
+              4(или меньше)
+          </label>
+          <label>
+              <input type="radio" checked="checked"
+                     name="radio-group-2" value="Значение2" />
+              5-12
+          </label>
+          <label>
+              <input type="radio"
+                     name="radio-group-2" value="Значение3" />
+              40(для сороконожек)
+          </label><br />
 
-    <h2>Нумерованный список</h2>
+          <label>
+              Сверхспособности:
+              <br />
+              <select name="field-name-4[]"
+                      multiple="multiple">
+                  <option value="Значение1">Бессмертие</option>
+                  <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+                  <option value="Значение3" selected="selected">Левитация</option>
+                  <option value="Значение4" selected="selected">Сдача сессии на"отлично"</option>
+                  <option value="Значение5" selected="selected">Умение высыпаться</option>
+              </select>
+          </label><br />
 
-    <ol>
-        <li><a href="http://example.com">Ссылка на главную страницу</a></li>
-        <li><a href="https://example.com">Ссылка на главную страницу в протоколе https</a></li>
-        <li>a href="ftp://example.com/f.txt">Ссылку на файл на сервере FTP без авторизации</a></li>
-        <li>a href="ftp://user:pass555@example.com/f.txt">Ссылку на файл на сервере FTP без авторизации</a></li>
-        <li><a href="http://necotoriysayt.com#anchor">Ссылка на некоторый фрагмент сайта </a></li>
-        <li><a href="http://example.com#top">Ссылка на фрагмент текущей страницы </a></li>
-        <li><a href="http://necotoriysayt.com/chto-to?page=3&dostavka=dilivery">Ссылка с двумя параметрами URL </a></li>
-        <li>
-            <ul>
-                <li><a "http://example.com">Ссылкf без href</a></li>
-            </ul>
-        </li>
-        <li><a "http://example.com">Ссылка без href</a></li>
-        <li><a hhref=" ">Ссылка пустым href</a></li>
-        <li><a href="http://example.com" rel="nofollow">Сссылка по которой запрещен переход поисковикам</a></li>
-        <li><a href="http://example.com" rel="noindex">Ссылка по которой запрещена индексация поисковиками</a></li>
-        <li><p>Контекстная<a href="http://exmaple.com">ссылка</a></p></li>
-        <li><a href="http://example.com">Ссылка на главную страницу</a></li>
-    </ol>
-    
-    <h2>Таблица</h2>
+          <label>
+              Немного о себе(биография):<br />
+              <textarea name="field-name-2"></textarea>
+          </label><br />
 
-    <table>
-      <tr>
-        <td>Первая ячейка первой строки</td>
-        <td>Вторая ячейка первой строки</td>
-      </tr>
-      <tr>
-        <td>Первая ячейка второй строки</td>
-        <td>Вторая ячейка второй строки</td>
-      </tr>
-    </table>
+          <br />
+          <label>
+              <input type="checkbox" checked="checked"
+                     name="check-1" />
+              С контрактом ознакомлен(а)
+          </label><br />
 
+          Все данные заполнены:
+          <input type="submit" value="Отправить" />
+      </form>
   </body>
 
 </html>
- 
+<!--
+(c) Сергей Синица 2019
+Ширина, выравнивание, float
+-->
