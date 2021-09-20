@@ -4,7 +4,7 @@
 }
 
 a {
-    color:orange;
+    color:teal;
 }
 
 header {
@@ -24,9 +24,9 @@ header {
 
 .head-text {
     line-height: 100px;
-    color: coral;
-    font-size: 30px;
-    font-family: Times New Roman, sans-serif;
+    color:tomato;
+    font-size: 32px;
+    font-family: SimSun, sans-serif;
 }
 
 
@@ -45,8 +45,8 @@ footer {
 
 .podvaltext {
     font-size: 20px;
-    color: coral;
-    font-family: Arial, sans-serif;
+    color: tomato;
+    font-family: Segoe UI Black, sans-serif;
     float: left;
     margin: 50px;
     text-align: center;
@@ -57,13 +57,14 @@ footer {
 }
 
 nav {
-    background-color: #00BFFF;
+    background-color: #8bc34a;
     max-width: 960px;
     margin: 0 auto;
-    margin-top: 20px;
     padding: 10px;
-    font-family: Times New Roman, sans-serif;
-    font-size: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+
 }
 
 table {
@@ -71,14 +72,14 @@ table {
 }
 
 tr:nth-child(odd) {
-    background-color: #FFD700;
+    background-color:#259b24;
 }
 
 tr:nth-child(even) {
-    background-color: #FFFF00;
+    background-color: #72d572;
 }
 
 tr:hover {
-    background-color: #666;
-    color: #fff;
+    background-color: #ba66ff;
+    color: #7019c2;
 }
