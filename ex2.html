@@ -11,18 +11,22 @@
 </head>
 
 <body style="margin:0;">
+    <header>
+        <div class="container">
+            <img style="float:left; margin:10px; width:180px; height:100px;" src="https://clipart-best.com/img/frog/frog-clip-art-50.png" alt="Логотип лягушка" />
+            <p class="head-text">Общество защиты лягушек </p>
+        </div>
+    </header>
 
-    <div style="width:100%; background-color:#33691e; padding: 10px; height:120px;">
-        <!-- картинка обтекает текст слева -->
-        <img style="float:left; margin:10px; width:180px; height:100px;" src="https://clipart-best.com/img/frog/frog-clip-art-50.png" alt="Логотип лягушка" />
-        <!-- этот блок, как положено блочному элементу по умолчанию, займет всю оставшуюся ширину родительского элемента -->
-        <div style="background-color:#558b2f; padding:10px;">Общество защиты ляшушек</div>
-    </div>
+    <nav>
+        <div class="container">
 
-    <!-- этот блок будет ограничен по ширине и горизонтально выровнен по центру родительского элемента -->
-    <div style="max-width:800px; background-color:#ccc; margin: 0 auto; margin-top:20px; padding:10px;">
-        Контент
-    </div>
+            <a href="/menu.html">Меню </a> |
+            <a href="/photo.html"> Больше фотографий </a>  |
+            <a href="/help.html"> Как вы можете помочь движению</a>
+
+        </div>
+    </nav>
 
     <div class="main">
         <div class="container">
@@ -59,95 +63,115 @@
                 <li><a href="./"> Сокращенная ссылка на внутреннюю страницу </a></li>
             </ol>
 
-            <h2>Форма</h2>
+            <h2>Таблица</h2>
+            <body>
+                <table>
+                    <tr>
+                        <th>Колонка 1</th>
+                        <th>Колонка 2</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Ячейка 11 объединенная с 12</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 21</td>
+                        <td>Ячейка 22</td>
+                    </tr>
+                </table>
 
-            <form action="/"
-                  method="POST">
+            </body>
 
-                <label>
-                    Введите имя:<br />
-                    <input name="field-name-1"
-                           value="" />
-                </label><br />
+</html>
 
-                <label>
-                    Введите email:<br />
-                    <input name="field-email"
-                           value=""
-                           type="email" />
-                </label><br />
+<h2>Форма</h2>
 
-                <label>
-                    Введите дату рождения:<br />
-                    <input name="field-date"
-                           value=""
-                           type="date" />
-                </label><br />
+<form action="/"
+      method="POST">
 
-                Выберите пол:<br />
-                <label>
-                    <input type="radio" checked="checked"
-                           name="radio-group-1" value="Значение1" />
-                    Женский
-                </label>
-                <label>
-                    <input type="radio"
-                           name="radio-group-1" value="Значение2" />
-                    Мужской
-                </label><br />
+    <label>
+        Введите имя:<br />
+        <input name="field-name-1"
+               value="" />
+    </label><br />
 
-                Количество конечностей:<br />
-                <label>
-                    <input type="radio" checked="checked"
-                           name="radio-group-2" value="Значение1" />
-                    4(или меньше)
-                </label>
-                <label>
-                    <input type="radio" checked="checked"
-                           name="radio-group-2" value="Значение2" />
-                    5-12
-                </label>
-                <label>
-                    <input type="radio"
-                           name="radio-group-2" value="Значение3" />
-                    40(для сороконожек)
-                </label><br />
+    <label>
+        Введите email:<br />
+        <input name="field-email"
+               value=""
+               type="email" />
+    </label><br />
 
-                <label>
-                    Сверхспособности:
-                    <br />
-                    <select name="field-name-4[]"
-                            multiple="multiple">
-                        <option value="Значение1">Бессмертие</option>
-                        <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
-                        <option value="Значение3" selected="selected">Левитация</option>
-                        <option value="Значение4" selected="selected">Сдача сессии на"отлично"</option>
-                        <option value="Значение5" selected="selected">Умение высыпаться</option>
-                    </select>
-                </label><br />
+    <label>
+        Введите дату рождения:<br />
+        <input name="field-date"
+               value=""
+               type="date" />
+    </label><br />
 
-                <label>
-                    Немного о себе(биография):<br />
-                    <textarea name="field-name-2"></textarea>
-                </label><br />
+    Выберите пол:<br />
+    <label>
+        <input type="radio" checked="checked"
+               name="radio-group-1" value="Значение1" />
+        Женский
+    </label>
+    <label>
+        <input type="radio"
+               name="radio-group-1" value="Значение2" />
+        Мужской
+    </label><br />
 
-                <br />
-                <label>
-                    <input type="checkbox" checked="checked"
-                           name="check-1" />
-                    С контрактом ознакомлен(а)
-                </label><br />
+    Количество конечностей:<br />
+    <label>
+        <input type="radio" checked="checked"
+               name="radio-group-2" value="Значение1" />
+        4(или меньше)
+    </label>
+    <label>
+        <input type="radio" checked="checked"
+               name="radio-group-2" value="Значение2" />
+        5-12
+    </label>
+    <label>
+        <input type="radio"
+               name="radio-group-2" value="Значение3" />
+        40(для сороконожек)
+    </label><br />
 
-                Все данные заполнены:
-                <input type="submit" value="Отправить" />
-            </form>
+    <label>
+        Сверхспособности:
+        <br />
+        <select name="field-name-4[]"
+                multiple="multiple">
+            <option value="Значение1">Бессмертие</option>
+            <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+            <option value="Значение3" selected="selected">Левитация</option>
+            <option value="Значение4" selected="selected">Сдача сессии на"отлично"</option>
+            <option value="Значение5" selected="selected">Умение высыпаться</option>
+        </select>
+    </label><br />
+
+    <label>
+        Немного о себе(биография):<br />
+        <textarea name="field-name-2"></textarea>
+    </label><br />
+
+    <br />
+    <label>
+        <input type="checkbox" checked="checked"
+               name="check-1" />
+        С контрактом ознакомлен(а)
+    </label><br />
+
+    Все данные заполнены:
+    <input type="submit" value="Отправить" />
+</form>
         </div>
     </div>
-    <footer>
-        <div class="container">
-            <p class="podvaltext">(с) Калинина Анастасия 2021 </p>
-        </div>
-    </footer>
+<footer>
+    <div class="container">
+        <p class="podvaltext">(с) Калинина Анастасия 2021 </p>
+    </div>
+</footer>
 </body>
 
 </html>
