@@ -34,9 +34,6 @@ header {
     list-style-type: none;
 }
 
-.main img {
-    width: 666px;
-}
 
 footer {
     background-color: #33691e;
@@ -47,7 +44,7 @@ footer {
     font-size: 20px;
     color: tomato;
     font-family: Segoe UI Black, sans-serif;
-    float: left;
+    float:left;
     margin: 50px;
     text-align: center;
 }
