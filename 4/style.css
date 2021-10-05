@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color:teal;
+}
+
+header {
+    background-color: #33691e; height: 120px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    float: center;
+    text-align: center;
+}
+
+.main {
+    background-color: #c5e1a5;
+}
+
+.head-text {
+    line-height: 100px;
+    color:tomato;
+    font-size: 32px;
+    font-family: SimSun, sans-serif;
+}
+
+
+.main li {
+    list-style-type: none;
+}
+
+
+footer {
+    background-color: #33691e;
+    height: 120px;
+}
+
+.podvaltext {
+    font-size: 20px;
+    color: tomato;
+    font-family: Segoe UI Black, sans-serif;
+    float:left;
+    margin: 50px;
+    text-align: center;
+}
+
+.main td, th {
+    padding: 30px;
+}
+
+nav {
+    background-color: #8bc34a;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+
+}
+
+table {
+    margin: 0 auto;
+}
+
+tr:nth-child(odd) {
+    background-color:#259b24;
+}
+
+tr:nth-child(even) {
+    background-color: #72d572;
+}
+
+tr:hover {
+    background-color: #ba66ff;
+    color: #7019c2;
+}
