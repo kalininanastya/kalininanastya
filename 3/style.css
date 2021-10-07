@@ -4,11 +4,35 @@
 }
 
 a {
-    color:teal;
+    color: teal;
 }
 
 header {
-    background-color: #33691e; height: 120px;
+    background-color: #33691e;
+    height: 120px;
+    width: 100%;
+}
+.containerm {
+    display: flex;
+    flex-direction: column;
+}
+
+    .containerm div {
+        padding: 10px;
+    }
+.box1 {
+    flex: 1;
+    order: 1;
+}
+
+.box2 {
+    flex: 1;
+    order: 3;
+}
+
+.box3 {
+    flex: 1;
+    order: 2;
 }
 
 .container {
@@ -24,7 +48,7 @@ header {
 
 .head-text {
     line-height: 100px;
-    color:tomato;
+    color: tomato;
     font-size: 32px;
     font-family: SimSun, sans-serif;
 }
@@ -34,34 +58,24 @@ header {
     list-style-type: none;
 }
 
-
-footer {
-    background-color: #33691e;
-    height: 120px;
-}
-
-.podvaltext {
-    font-size: 20px;
-    color: tomato;
-    font-family: Segoe UI Black, sans-serif;
-    float:left;
-    margin: 50px;
-    text-align: center;
-}
-
 .main td, th {
     padding: 30px;
 }
 
 nav {
     background-color: #8bc34a;
-    max-width: 960px;
+    width: 100%;
     margin: 0 auto;
     padding: 10px;
     color: white;
     font-family: Arial, sans-serif;
-    font-size: 22px;
+    font-size: 22px
+}
 
+.container-nav {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 table {
@@ -69,7 +83,7 @@ table {
 }
 
 tr:nth-child(odd) {
-    background-color:#259b24;
+    background-color: #259b24;
 }
 
 tr:nth-child(even) {
@@ -79,4 +93,48 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #ba66ff;
     color: #7019c2;
+}
+
+footer {
+    background-color: #33691e;
+    height: 120px;
+    width: 100%;
+}
+.podvaltext {
+    font-size: 20px;
+    color: tomato;
+    font-family: Segoe UI Black, sans-serif;
+    float: left;
+    margin: 50px;
+    text-align: center;
+}
+@media (min-width: 800px) {
+
+    .containern li {
+        display: inline;
+    }
+
+    .container {
+        max-width: 960px;
+    }
+
+
+    nav {
+        max-width: 960px;
+    }
+
+    .box1 {
+        flex: 1;
+        order: 1;
+    }
+
+    .box2 {
+        flex: 1;
+        order: 2;
+    }
+
+    .box3 {
+        flex: 1;
+        order: 3;
+    }
 }
