@@ -1,12 +1,9 @@
 form {
-    background-color: #E9A762;
+    background-color: #33691e;
     padding: 70px;
     text-align: left;
     margin: auto;
-    display: table;
-    border-radius: 50px;
-    background-image: url(border.png);
-    border: 5px solid #F1C494;
+   display: table
 }
 #button1{
  appearance:none;
