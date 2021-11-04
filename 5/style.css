@@ -8,3 +8,29 @@ form {
     background-image: url(border.png);
     border: 5px solid #F1C494;
 }
+#button1{
+ appearance:none;
+ -webkit-appearance:none;
+ padding:10px;
+ border:none;
+ background-color:#E96C62;
+ color:#73150D;
+ font-weight:600;
+ border-radius:5px;
+ width:100%;
+}
+.head_1{
+ width:400px; 
+ color: #407D91;
+ text-align: center;
+ font-family: Arial;
+}	
+#result {
+ color: #407D91;
+ text-align: center;
+ font-family: Arial;
+ font-size: 50px;
+}
+p {
+ font-family: Arial;
+}
