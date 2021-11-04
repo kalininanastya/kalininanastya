@@ -1,5 +1,5 @@
 form {
-    background-color: #33691e;
+    background-color: #c5e1a5;
     padding: 70px;
     text-align: left;
     margin: auto;
@@ -11,19 +11,17 @@ form {
  padding:10px;
  border:none;
  background-color:#E96C62;
- color:#73150D;
  font-weight:600;
  border-radius:5px;
  width:100%;
 }
 .head_1{
  width:400px; 
- color: #teal;
  text-align: center;
  font-family: Arial;
 }	
 #result {
- color: #teal;
+ color:#E96C62;
  text-align: center;
  font-family: Arial;
  font-size: 50px;
