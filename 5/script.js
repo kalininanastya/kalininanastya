@@ -1,4 +1,4 @@
-<script> 
+
          function clickA() {
          let f1 = document.getElementsByName("field1");
          let f2 = document.getElementsByName("field2");
@@ -9,4 +9,4 @@
              alert(" Недопустимые значения ");
          }
          return false;
-     }</script>
+     }
