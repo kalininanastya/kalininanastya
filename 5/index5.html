@@ -4,32 +4,18 @@
 <head>
     <link href="style.css" rel="stylesheet" type="text/css">
     <title>Задание 5</title>
-
-    <script>
-     function clickA() {
-         let a1 = document.getElementsByName("field1");
-         let a2 = document.getElementsByName("field2");
-         let b = document.getElementById("result");
-         b.innerHTML = a1[0].value * a2[0].value;
-         if ((a2[0].value == '0') || (a1[0].value == '0')) {
-             b.innerHTML = "error";
-             alert(" Недопустимые значения ");
-         }
-         return false;
-     }
-    </script>
 </head>
 <body>
+<form>
+  <div class="head_1"><h1>Калькулятор</h1></div>
+  <hr>
+  <p>Цена: <input name="field1" type="text"></p>
+  <p>Количество: <input name="field2" type="text"></p>
+  <button id="button1" onclick="return click1();">Подсчитать стоимость</button>
+  <hr>
 
-    <form>
-        <div class="head_1"><h1>Калькулятор</h1></div>
-        <hr>
-        <p>Цена: <input name="field1" type="text"></p>
-        <p>Количество: <input name="field2" type="text"></p>
-        <button id="button1" onclick="return click1();">Подсчитать стоимость</button>
-        <hr>
-
-        <div id="result"></div>
-    </form>
+  <div id="result"></div>
+</form>
+	<script src="script.js"></script>
 </body>
 </html>
