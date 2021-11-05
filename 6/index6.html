@@ -1,36 +1,35 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <title>Задание 5</title>
-
-    <script>
-     function clickA() {
-         let a1 = document.getElementsByName("field1");
-         let a2 = document.getElementsByName("field2");
-         let b = document.getElementById("result");
-         b.innerHTML = a1[0].value * a2[0].value;
-         if ((a2[0].value == '0') || (a1[0].value == '0')) {
-             b.innerHTML = "error";
-             alert(" Недопустимые значения ");
-         }
-         return false;
-     }
-    </script>
+<meta charset="UTF-8">
+    <title>Калькулятор</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
 
-    <form>
-        <div class="head_1"><h1>Калькулятор</h1></div>
-        <hr>
-        <p>Цена: <input name="field1" type="text"></p>
-        <p>Количество: <input name="field2" type="text"></p>
-        <button id="button1" onclick="return click1();">Подсчитать стоимость</button>
-        <hr>
+<form>
+  <hr>
+  Введите кол-во товара:
+        <input type="text" id="num" placeholder="Количество" /><br />
+        Выберите товар:
+        <select id="type">
+          <option value="1" selected>Игрушка</option>
+          <option value="2">Брелок</option>
+          <option value="3">Чехол</option></select
+        ><br />
+        <div id="radios">
+          <input type="radio" name="option" value="50" />ЧБ
+          <input type="radio" name="option" value="100" />Цветной <br />
+        </div>
+        <div id="checkbox">
+          <input type="checkbox" id="checkbox-check" value="200" /> Свой дизайн
+        </div>
+  <hr>
 
-        <div id="result"></div>
-    </form>
-    <script src="script.js"></script>
+  Итоговая стоимость: <input type="text" id="total" disabled />
+</form>
+	<script src="script.js"></script>
 </body>
 </html>
