@@ -1,10 +1,11 @@
-<script>function clickA() {
-         let a1 = document.getElementsByName("field1");
-         let a2 = document.getElementsByName("field2");
-         let b = document.getElementById("result");
-         b.innerHTML = a1[0].value * a2[0].value;
-         if ((a2[0].value == '0') || (a1[0].value == '0')) {
-             b.innerHTML = "error";
+<script> 
+         function clickA() {
+         let f1 = document.getElementsByName("field1");
+         let f2 = document.getElementsByName("field2");
+         let r = document.getElementById("result");
+         r.innerHTML = f1[0].value * f2[0].value;
+         if ((f2[0].value == '0') || (f1[0].value == '0')) {
+             r.innerHTML = "error";
              alert(" Недопустимые значения ");
          }
          return false;
