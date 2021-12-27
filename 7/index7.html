@@ -1,36 +1,57 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <title>Задание 5</title>
-
-    <script>
-     function clickA() {
-         let a1 = document.getElementsByName("field1");
-         let a2 = document.getElementsByName("field2");
-         let b = document.getElementById("result");
-         b.innerHTML = a1[0].value * a2[0].value;
-         if ((a2[0].value == '0') || (a1[0].value == '0')) {
-             b.innerHTML = "error";
-             alert(" Недопустимые значения ");
-         }
-         return false;
-     }
-    </script>
-</head>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Задание 7</title>
+	<link rel="stylesheet" href="Style.css">
+	<meta name="viewport" content="width=device-width">
+	</head>
+  
 <body>
+<div class="wrapper">
+    <div class="slider">
+      <div class='slider-item'>
+        <img src="л1.png" alt="Loki">
+      </div>
+      <div class='slider-item'>
+        <img src="л2.png" alt="Loki">
+      </div>
+      <div class='slider-item'>
+        <img src="л3.png" alt="Loki">
+      </div>
+      <div class='slider-item'>
+        <img src="л4.png" alt="Loki">
+      </div>
+      <div class='slider-item'>
+        <img src="л5.png" alt="Loki">
+      </div>
+      <div class='slider-item'>
+        <img src="л6.png" alt="Loki">
+      </div>
+      <div class='slider-item'>
+        <img src="л7.png" alt="Loki">
+      </div>
+      <div class='slider-item'>
+        <img src="л8.png" alt="Loki">
+      </div>
+      <div class='slider-item'>
+        <img src="л9.png" alt="Loki">
+      </div>
+      <div class='slider-item'>
+        <img src="л10.png" alt="Loki">
+      </div>
+      <div class='slider-item'>
+        <img src="л11.png" alt="Loki">
+      </div>
+      <div class='slider-item'>
+        <img src="л12.png" alt="Loki">
+      </div>
+    </div>
+  </div>
 
-    <form>
-        <div class="head_1"><h1>Калькулятор</h1></div>
-        <hr>
-        <p>Цена: <input name="field1" type="text"></p>
-        <p>Количество: <input name="field2" type="text"></p>
-        <button id="button1" onclick="return click1();">Подсчитать стоимость</button>
-        <hr>
-
-        <div id="result"></div>
-    </form>
-    <script src="script.js"></script>
 </body>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="slick.min.js"></script>
+    <script src="java.js"></script>
+</html>
 </html>
