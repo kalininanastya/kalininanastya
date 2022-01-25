@@ -1,10 +1,17 @@
-form {
-    background-color: #E9A762;
-    padding: 70px;
-    text-align: left;
-    margin: auto;
-    display: table;
-    border-radius: 50px;
-    background-image: url(border.png);
-    border: 5px solid #F1C494;
+img {
+  margin: 10px;
+}
+.main {
+  background-color:#be88ce;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 30px 50px 10px 50px;
+}
+@media screen and (max-width: 480px) {
+  img {
+    margin: 3px;
+  }
+  .main {
+    padding: 30px 30px 10px 30px;
+  }
 }
