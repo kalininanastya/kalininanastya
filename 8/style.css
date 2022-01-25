@@ -1,10 +1,8 @@
-form {
-    background-color: #E9A762;
-    padding: 70px;
-    text-align: left;
-    margin: auto;
-    display: table;
-    border-radius: 50px;
-    background-image: url(border.png);
-    border: 5px solid #F1C494;
+body{
+	background-color:#FFA07A;
+}
+header{
+	background-color:#696969;
+	text-align: center;
+
 }
