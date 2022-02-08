@@ -53,7 +53,13 @@ function countPrice(option) {
   let res = multiplier * count;
   switch (option) {
     case 1:
-      total.value = res;
+      r.forEach(function (p) {
+        p.addEventListener("change", function () {
+          res = multiplier * count + Number(p.value);
+          total.value = res;
+        });
+        total.value = res;
+      });
       break;
     case 2:
       r.forEach(function (p) {
