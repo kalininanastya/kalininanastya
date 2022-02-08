@@ -29,3 +29,6 @@ form {
 p {
  font-family: Arial;
 }
+ body {
+      background-image: url(fon.jpg);
+  }
