@@ -32,6 +32,9 @@ button {
   border-radius: 5px;
   box-shadow: 0px 0px 10px #000;
 }
-#popup-btn {
+body {
+      background-image: url(fon2.png);
+  }
+  
   margin: 10px;
 }
