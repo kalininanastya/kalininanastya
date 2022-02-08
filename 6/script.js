@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded", function () {
   type.addEventListener("change", function () {
     switch (type.value) {
       case "1":
-        radios.style.display = "none";
+        radios.style.display = "block";
         check.style.display = "none";
         countPrice(1);
         break;
@@ -46,7 +46,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
 function countPrice(option) {
   const count = Number(document.getElementById("num").value);
-  const multiplier = 8;
+  const multiplier = 500;
   const total = document.getElementById("total");
   let r = document.querySelectorAll("#radios input[type=radio]");
   let c = document.getElementById("checkbox-check");
